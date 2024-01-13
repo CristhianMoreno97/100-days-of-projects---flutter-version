@@ -7,6 +7,16 @@ class Day2Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Day 2')),
+      body: const _MainView(),
     );
+  }
+}
+
+class _MainView extends StatelessWidget {
+  const _MainView();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
