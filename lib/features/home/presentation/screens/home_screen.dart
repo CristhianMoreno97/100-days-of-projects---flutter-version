@@ -14,11 +14,16 @@ class _HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Text('100 Days of Projects'),
-        _ChallengesList(),
-      ],
+    return Center(
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 600),
+        child: const Column(
+          children: [
+            Text('100 Days of Projects'),
+            _ChallengesList(),
+          ],
+        ),
+      ),
     );
   }
 }
