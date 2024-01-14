@@ -20,41 +20,53 @@ class _MainView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return SingleChildScrollView(
       child: Container(
-        constraints: const BoxConstraints(maxWidth: 340),
-        decoration: const BoxDecoration(
-          color: Color(0xFF242323),
-          borderRadius: BorderRadius.all(
-            Radius.circular(10),
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Color(0xFF000000),
-              offset: Offset(0, 0),
-              blurRadius: 16,
-              spreadRadius: -8,
-            ),
-          ],
+        padding: const EdgeInsets.all(40),
+        child: const Center(
+          child: _UserCard(),
         ),
-        child: const SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              SizedBox(height: 64),
-              _CardImage(),
-              SizedBox(height: 16),
-              _CardHeader(),
-              _CardTag(),
-              SizedBox(height: 32),
-              _CardCopy(),
-              SizedBox(height: 64),
-              _CardSocialItems(),
-            ],
-          ),
+      ),
+    );
+  }
+}
+
+class _UserCard extends StatelessWidget {
+  const _UserCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      constraints: const BoxConstraints(maxWidth: 340),
+      decoration: const BoxDecoration(
+        color: Color(0xFF242323),
+        borderRadius: BorderRadius.all(
+          Radius.circular(10),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: Color(0xFF000000),
+            offset: Offset(0, 0),
+            blurRadius: 16,
+            spreadRadius: -8,
+          ),
+        ],
+      ),
+      child: const Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(height: 64),
+          _CardImage(),
+          SizedBox(height: 16),
+          _CardHeader(),
+          _CardTag(),
+          SizedBox(height: 32),
+          _CardCopy(),
+          SizedBox(height: 64),
+          _CardSocialItems(),
+        ],
       ),
     );
   }
