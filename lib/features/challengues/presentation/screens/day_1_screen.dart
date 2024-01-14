@@ -22,7 +22,7 @@ class _MainView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        constraints: const BoxConstraints(maxWidth: 400),
+        constraints: const BoxConstraints(maxWidth: 340),
         decoration: const BoxDecoration(
           color: Color(0xFF242323),
           borderRadius: BorderRadius.all(
