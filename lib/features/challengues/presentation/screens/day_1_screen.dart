@@ -143,7 +143,7 @@ class _CardSocialItems extends StatelessWidget {
           ),
           _SocialItem(
             url:
-                'https://www.linkedin.com/in/cristhian-moreno-ramirez-7b0b3b1b0/',
+                'https://www.linkedin.com/in/cristhian-fernando-moreno-manrique-7a8483104/',
             icon: FontAwesomeIcons.linkedin,
           ),
         ],
