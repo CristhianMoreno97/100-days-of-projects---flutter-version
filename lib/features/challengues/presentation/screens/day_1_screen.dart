@@ -37,21 +37,23 @@ class _MainView extends StatelessWidget {
             ),
           ],
         ),
-        child: const Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SizedBox(height: 64),
-            _CardImage(),
-            SizedBox(height: 16),
-            _CardHeader(),
-            _CardTag(),
-            SizedBox(height: 32),
-            _CardCopy(),
-            SizedBox(height: 64),
-            _CardSocialItems(),
-          ],
+        child: const SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(height: 64),
+              _CardImage(),
+              SizedBox(height: 16),
+              _CardHeader(),
+              _CardTag(),
+              SizedBox(height: 32),
+              _CardCopy(),
+              SizedBox(height: 64),
+              _CardSocialItems(),
+            ],
+          ),
         ),
       ),
     );
