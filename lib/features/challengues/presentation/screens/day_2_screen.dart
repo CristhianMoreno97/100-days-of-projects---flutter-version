@@ -20,9 +20,11 @@ class _MainView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(40),
-      child: const Center(child: _Card()),
+    return SingleChildScrollView(
+      child: Container(
+        padding: const EdgeInsets.all(40),
+        child: const Center(child: _Card()),
+      ),
     );
   }
 }
