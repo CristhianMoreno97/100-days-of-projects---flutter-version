@@ -9,8 +9,7 @@ class Day1Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Day 1')),
       body: const _MainView(),
-      backgroundColor: Colors.white,
-      //backgroundColor: const Color(0xFF212020),
+      backgroundColor: const Color(0xFF212020),
     );
   }
 }
