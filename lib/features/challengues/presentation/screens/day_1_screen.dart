@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Day1Screen extends StatelessWidget {
   const Day1Screen({super.key});
@@ -169,7 +170,12 @@ class _SocialItem extends StatelessWidget {
               const EdgeInsets.symmetric(vertical: 20)),
           backgroundColor: MaterialStateProperty.all(const Color(0xFF1f1e1e)),
         ),
-        onPressed: () {},
+        onPressed: () async {
+          final uri = Uri.parse(url);
+          if (await canLaunchUrl(uri)) {
+            await launchUrl(uri);
+          }
+        },
         icon: Icon(icon, color: const Color(0xFFc2c2c2)),
       ),
     );
