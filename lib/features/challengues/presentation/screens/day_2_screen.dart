@@ -182,11 +182,14 @@ class _UserName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'Cristhian Moreno',
-      style: TextStyle(
-        fontSize: 12,
-        fontWeight: FontWeight.w600,
+    return const Flexible(
+      child: Text(
+        'Cristhian Moreno',
+        style: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w600,
+          overflow: TextOverflow.visible,
+        ),
       ),
     );
   }
