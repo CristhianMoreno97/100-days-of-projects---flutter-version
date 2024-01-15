@@ -1,6 +1,6 @@
-import 'package:days_of_projects_flutter_version/features/challengues/presentation/screens/day_1_screen.dart';
-import 'package:days_of_projects_flutter_version/features/challengues/presentation/screens/day_2_screen.dart';
-import 'package:days_of_projects_flutter_version/features/challengues/presentation/screens/day_3_screen.dart';
+import 'package:days_of_projects_flutter_version/features/challenges/presentation/screens/day_1_screen.dart';
+import 'package:days_of_projects_flutter_version/features/challenges/presentation/screens/day_2_screen.dart';
+import 'package:days_of_projects_flutter_version/features/challenges/presentation/screens/day_3_screen.dart';
 import 'package:days_of_projects_flutter_version/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
