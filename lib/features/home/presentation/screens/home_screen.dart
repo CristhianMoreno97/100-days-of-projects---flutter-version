@@ -1,3 +1,4 @@
+import 'package:days_of_projects_flutter_version/config/route/routes.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -33,35 +34,18 @@ class _ChallengesList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final challenges = [
-      {
-        'title': 'Day 1',
-        'description': 'Card',
-        'route': '/day1',
-      },
-      {
-        'title': 'Day 2',
-        'description': 'Card',
-        'route': '/day2',
-      }
-    ];
-
+    final challenges = ChallengeRoutes.routes;
     return Expanded(
       child: ListView.builder(
         itemCount: challenges.length,
         itemBuilder: (context, index) {
           final challenge = challenges[index];
-          const snackBar = SnackBar(content: Text('No route found'));
 
           return ListTile(
-            title: Text(challenge['title'] ?? 'No title'),
-            subtitle: Text(challenge['description'] ?? 'No description'),
+            title: Text(challenge.name),
+            subtitle: Text(challenge.description ?? ''),
             onTap: () {
-              if (challenge['route'] == null) {
-                ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                return;
-              }
-              Navigator.pushNamed(context, challenge['route'] ?? '/');
+              Navigator.pushNamed(context, challenge.path);
             },
           );
         },
