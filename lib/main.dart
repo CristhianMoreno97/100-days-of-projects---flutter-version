@@ -1,5 +1,6 @@
 import 'package:days_of_projects_flutter_version/features/challengues/presentation/screens/day_1_screen.dart';
 import 'package:days_of_projects_flutter_version/features/challengues/presentation/screens/day_2_screen.dart';
+import 'package:days_of_projects_flutter_version/features/challengues/presentation/screens/day_3_screen.dart';
 import 'package:days_of_projects_flutter_version/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => const HomeScreen(),
           '/day1': (context) => const Day1Screen(),
           '/day2': (context) => const Day2Screen(),
+          '/day3': (context) => const Day3Screen(),
         },
       ),
     );
